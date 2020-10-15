@@ -13,13 +13,4 @@
 //= require turbolinks
 //= require jquery
 //= require jquery_ujs
-//= require_tree .
-
-
-
-$(function() {
-  $(".sort_paginate_ajax th a, .sort_paginate_ajax .pagination a").on("click", function(){
-    $.getScript(this.href);
-    return false;
-  });
-});
+//= require twitter/bootstrap
