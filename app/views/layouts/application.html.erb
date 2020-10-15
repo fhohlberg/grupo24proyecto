@@ -58,7 +58,64 @@
       <nav class="navbar navbar-expand-lg  navbar-light w-100">
           <h4>MAP-EN</h4>
           <a class="navbar-brand" href="/"><img src="https://www.creativefabrica.com/wp-content/uploads/2018/11/Wave-logo-by-Mansel-Brist-2-580x406.jpg" width="194" height="81" alt="MAP-EN" /></a>
-@@ -132,6 +130,9 @@
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse flex-column align-items-end" id="navbarSupportedContent">
+          
+          <form class="search-form form-inline my-2 my-lg-0" action="/search/" method="post" style="position:relative;">
+            <input type="hidden" name="pesquisaSubmit" value="1" />
+            <input id="autosearch" name="name" class="form-control  form-control-sm mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-sm btn-outline-secondary my-2 my-sm-0" style="border:0;" type="submit"><i class="fa fa-search"></i></button>
+          </form>
+          <script type="text/javascript">
+            $(document).ready(function() {
+              var a = $('#autosearch').autocomplete({ 
+                serviceUrl:'/s/s/',
+                minChars:2, 
+                maxHeight:400,
+                appendTo:$(".search-form"),
+                width:400,
+                deferRequestBy: 0, //miliseconds
+                noCache: false, //default is false, set to true to disable caching
+                onSelect: function(value, data){ location.href=data; }
+              });
+            });
+          </script>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link  dropdown-toggle active" id="contentID_130_0" href="/" >Mapeo de Energía</a>
+                <div class="dropdown-menu" aria-labelledby="contentID_130_0">
+                  <a class="dropdown-item" href="http://www.oceanenergysystems.org/ocean-energy/ocean-energy-in-the-world/" class="nav-link">Energía Oceánica en el mundo</a>
+                  <a class="dropdown-item" href="http://www.oceanenergysystems.org/ocean-energy/what-is-ocean-energy/" class="nav-link">¿Qué es la Energía Oceánica?</a>
+                  <a class="dropdown-item" href="http://www.oceanenergysystems.org/ocean-energy/gis-map-tool/" class="nav-link">Herramienta GIS</a>
+                  <a class="dropdown-item" href="http://www.oceanenergysystems.org/ocean-energy/educational-material/" class="nav-link">Material Educativo</a>
+                  <a class="dropdown-item" href="http://www.oceanenergysystems.org/ocean-energy/international-vision-for-ocean-energy/" class="nav-link">Visión Internacional</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link  dropdown-toggle " id="contentID_36_0" href="/" >Sobre Nosotros</a>
+              <div class="dropdown-menu" aria-labelledby="contentID_36_0">
+                <a class="dropdown-item" href="http://www.oceanenergysystems.org/about-us/who-is-oes-/">¿Qué es la OES?</a>
+                <a class="dropdown-item" href="http://www.oceanenergysystems.org/about-us/annual-report/">Reporte Anual</a>
+                <a class="dropdown-item" href="http://www.oceanenergysystems.org/about-us/vision-mission-/">Mision y Valores</a>
+                <a class="dropdown-item" href="http://www.oceanenergysystems.org/about-us/members/">Miembros</a>
+                <a class="dropdown-item" href="http://www.oceanenergysystems.org/about-us/contact/">Contacto</a>
+              </div>
+            </li>    
+        </div>
+      </nav>      
+      
+    </div>
+  </div>
+</div>
+<div class="text-center">
+  <iframe src="https://applik-d49.iee.fraunhofer.de/" width="80%" height="800"></iframe>
+</div>    
+    
+<div class="disclaimer py-3">
+  <div class="container text-center font-weight-light">
+    En el mapa se logra ver las distintas variables del fondo oceánico a evaluar.<br />
   </div>
 </div>    
 
