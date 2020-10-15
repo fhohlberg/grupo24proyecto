@@ -26,7 +26,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
-gem 'twitter-bootstrap-rails', '~> 4.0.0', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
+gem 'twitter-bootstrap-rails', , '~> 2.2.6'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
