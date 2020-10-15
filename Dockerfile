@@ -9,7 +9,7 @@ RUN apt-get update -qq && apt-get install -y postgresql-client
 RUN curl -sL https://deb.nodesource.com/setup_10.x | bash - \
         && apt-get install -y nodejs
 
-ENV APP_HOME /Grupo52-proyecto
+ENV APP_HOME /grupo24proyecto
 
 RUN mkdir $APP_HOME
 WORKDIR $APP_HOME

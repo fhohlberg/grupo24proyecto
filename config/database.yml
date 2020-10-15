@@ -8,9 +8,9 @@ default: &default
 
 development:
   <<: *default
-  database: Grupo52-proyecto_development
+  database: grupo24proyecto_development
 
 
 test:
   <<: *default
-  database: Grupo52-proyecto_test
+  database: grupo24proyecto_test
