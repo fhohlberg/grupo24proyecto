@@ -11,6 +11,8 @@ Rails.application.routes.draw do
     registrations: 'clients/registrations'
   }
 
+  get '/map', to: 'home#map'
+
   root to: 'home#index'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
