@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <!-- EDITAVEL -->
+    <title>MAP-EN</title>
+    <meta name="author" content="Backoffice-CMS" />
+
+
+    <!-- OBRIGAATORIO  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="http://www.oceanenergysystems.org/css/style2.css" />
+    <link rel="shortcut icon" href="http://www.oceanenergysystems.org/favicon.ico" type="image/x-icon" />
+  </head> 
+  <body>
+    <script type="text/javascript" src="http://www.oceanenergysystems.org/js/java.js"></script>
+    <script type="text/javascript" src="http://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://www.oceanenergysystems.org/js/language.js?GILang=en"></script>
+    <script type="text/javascript" src="http://www.oceanenergysystems.org/js/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="http://www.oceanenergysystems.org/js/jquery.autocomplete.js"></script>
+    <script type="text/javascript" src="http://www.oceanenergysystems.org/js/custom.js"></script>
+
+
+    <script type="text/javascript">
+      <!--
+      $(document).ready(function(){
+        $("a[rel='external']").attr('target','_blank');
+          
+       });    
+      -->
+    </script>
+    
+  <link rel="stylesheet" type="text/css" href="cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+    <script src="cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+    <script>
+    window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+      "popup": {
+        "background": "#237afc"
+      },
+      "button": {
+        "background": "#fff",
+        "text": "#237afc"
+      }
+      },
+      "theme": "classic",
+      "position": "bottom",
+      "content": {
+      "message": "This website uses cookies to ensure you get the best experience on our website.",
+      "dismiss": "Got it!",
+      "link": "More Information",
+      "href": "/about-us/privacy-policy/"
+      }
+    })});
+    </script>
+<div>
+  <div class="container text-center" id="maindiv" >
+    <div class="d-flex justify-content-between">
+    
+      
+      <nav class="navbar navbar-expand-lg  navbar-light w-100">
+        <a class="navbar-brand" href="/"><img src="MAP-EN.png" width="194" height="81" alt="MAP-EN" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse flex-column align-items-end" id="navbarSupportedContent">
+          
+
+          <form class="search-form form-inline my-2 my-lg-0" action="/search/" method="post" style="position:relative;">
+            <input type="hidden" name="pesquisaSubmit" value="1" />
+            <input id="autosearch" name="name" class="form-control  form-control-sm mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-sm btn-outline-secondary my-2 my-sm-0" style="border:0;" type="submit"><i class="fa fa-search"></i></button>
+          </form>
+
+          <script type="text/javascript">
+            $(document).ready(function() {
+
+
+              var a = $('#autosearch').autocomplete({ 
+                serviceUrl:'/s/s/',
+                minChars:2, 
+                maxHeight:400,
+                appendTo:$(".search-form"),
+                width:400,
+                deferRequestBy: 0, //miliseconds
+                noCache: false, //default is false, set to true to disable caching
+                onSelect: function(value, data){ location.href=data; }
+              });
+
+
+            });
+
+
+          </script>
+          <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+              <a  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link  dropdown-toggle active" id="contentID_130_0" href="/ocean-energy/">Mapeo de Energía</a>
+              
+                            <div class="dropdown-menu" aria-labelledby="contentID_130_0">
+                                <a class="dropdown-item" href="http://www.oceanenergysystems.org/ocean-energy/ocean-energy-in-the-world/">Energía Oceánica en el mundo</a>
+                                <a class="dropdown-item" href="http://www.oceanenergysystems.org/ocean-energy/what-is-ocean-energy/">¿Qué es la Energía Oceánica?</a>
+                                <a class="dropdown-item" href="http://www.oceanenergysystems.org/ocean-energy/gis-map-tool/">Herramienta GIS</a>
+                                <a class="dropdown-item" href="http://www.oceanenergysystems.org/ocean-energy/educational-material/">Material Educativo</a>
+                                <a class="dropdown-item" href="http://www.oceanenergysystems.org/ocean-energy/international-vision-for-ocean-energy/">Visión Internacional</a>
+                              </div>
+                          </li>
+              <a  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link  dropdown-toggle " id="contentID_36_0" href="/about-us/">Sobre Norotros</a>
+              
+                            <div class="dropdown-menu" aria-labelledby="contentID_36_0">
+                                <a class="dropdown-item" href="http://www.oceanenergysystems.org/about-us/who-is-oes-/">¿Qué es la OES?</a>
+                                <a class="dropdown-item" href="http://www.oceanenergysystems.org/about-us/annual-report/">Reporte Anual</a>
+                                <a class="dropdown-item" href="http://www.oceanenergysystems.org/about-us/vision-mission-/">Mision y Valores</a>
+                                <a class="dropdown-item" href="http://www.oceanenergysystems.org/about-us/members/">Miembros</a>
+                                <a class="dropdown-item" href="http://www.oceanenergysystems.org/about-us/contact/">Contacto</a>
+                              </div>
+                          </li>    
+        </div>
+      </nav>      
+      
+    </div>
+  </div>
+</div>
+
+<div class="text-center">
+  <iframe src="https://applik-d49.iee.fraunhofer.de/" width="80%" height="800"></iframe>
+</div>    
+    
+<div class="disclaimer py-3">
+  <div class="container text-center font-weight-light">
+    En el mapa se logra ver las distintas variables del fondo oceánico a evaluar.<br />
+  </div>
+</div>    
+
+<div class="footer-menu py-2">
+
+  <div class="container">
+    <div class="row">
+      <div class="col contacts">
+
+        <h4>Contacto</h4>
+        <div class="pt-3">
+          <strong>Grupo 24 Proyecto ING2030</strong>
+          <br />
+          Pontificia Universidad Católica
+          <br />
+          San Joaquín
+          <br />
+          Santiago, Chile
+          <br />
+          <br />
+          <br />
+        </div>
+      </div>
+      <div class="col follow">
+        <h4>Integrantes</h4>
+          <div class="pt-3">
+            Catalina Ricci
+            <br />
+            Ángeles Hederra
+            <br />
+            Gonzalo López
+            <br />
+            Benjamín Goñi
+            <br />
+            Francisca Hohlberg
+            <br />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="pt-5 pb-2">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col copyright">
+        Copyright &copy;  2020 MAP-EN
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-27130877-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+  </body>
+</html>
